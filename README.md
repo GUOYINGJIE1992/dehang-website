@@ -7,6 +7,22 @@
 1. 直接双击 `index.html` 在浏览器中预览（推荐 Chrome / Edge）。
 2. 部署时将整个文件夹上传至服务器或静态托管平台（如云虚拟主机、OSS、GitHub Pages 等）即可。
 
+## Gitee 部署与更新
+
+- 代码仓库：https://gitee.com/hndhjs/dehang-website （`main` 分支为源码，`pages` 分支为 Gitee Pages 部署分支）
+- 公网访问：`https://hndhjs.gitee.io/dehang-website/`（需完成 Gitee 实名认证并开启 Pages 服务后生效）
+
+更新流程：修改本地文件后执行
+
+```bash
+git add -A
+git commit -m "更新说明"
+git push origin main        # 更新源码
+git push origin main:pages  # 同步部署分支
+```
+
+然后在仓库"服务 → Gitee Pages"页面点击"更新"即可重新部署。
+
 ## 目录结构
 
 ```
