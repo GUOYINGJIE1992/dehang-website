@@ -612,6 +612,74 @@
 </button>
 <div class="toast" id="toast" role="status"></div>
 
+<!-- ======================= 智能客服机器人 ======================= -->
+<div class="robot-widget" id="robotWidget">
+  <div class="robot-tip" id="robotTip">有问题？点我咨询</div>
+  <button class="robot-btn" id="robotBtn" type="button" aria-label="打开智能客服">
+    <svg viewBox="0 0 120 150" aria-hidden="true">
+      <line x1="60" y1="12" x2="60" y2="24" stroke="#C2A05E" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="60" cy="9" r="5" fill="#C2A05E" class="robot-antenna"/>
+      <rect x="30" y="32" width="7" height="18" rx="3.5" fill="#C2A05E"/>
+      <rect x="83" y="32" width="7" height="18" rx="3.5" fill="#C2A05E"/>
+      <rect x="38" y="20" width="44" height="42" rx="15" fill="#0A1B33" stroke="#C2A05E" stroke-width="2.5"/>
+      <g class="robot-eyes">
+        <circle cx="53" cy="38" r="5.5" fill="#C2A05E"/>
+        <circle cx="67" cy="38" r="5.5" fill="#C2A05E"/>
+        <circle cx="54.5" cy="36" r="1.9" fill="#FFFFFF"/>
+        <circle cx="68.5" cy="36" r="1.9" fill="#FFFFFF"/>
+      </g>
+      <g class="robot-mouth"><rect x="55" y="51" width="10" height="4" rx="2" fill="#C2A05E"/></g>
+      <rect x="30" y="68" width="9" height="27" rx="4.5" fill="#0A1B33" stroke="#C2A05E" stroke-width="2"/>
+      <rect x="81" y="68" width="9" height="27" rx="4.5" fill="#0A1B33" stroke="#C2A05E" stroke-width="2"/>
+      <rect x="40" y="64" width="40" height="46" rx="13" fill="#0F2547" stroke="#C2A05E" stroke-width="2.5"/>
+      <circle cx="60" cy="83" r="10" fill="none" stroke="#C2A05E" stroke-width="2.5" class="robot-ring"/>
+      <circle cx="60" cy="83" r="4.5" fill="#C2A05E" class="robot-heart"/>
+      <rect x="47" y="112" width="11" height="20" rx="5.5" fill="#0A1B33" stroke="#C2A05E" stroke-width="2"/>
+      <rect x="62" y="112" width="11" height="20" rx="5.5" fill="#0A1B33" stroke="#C2A05E" stroke-width="2"/>
+    </svg>
+  </button>
+  <div class="robot-panel" id="robotPanel" aria-hidden="true">
+    <div class="robot-panel-head">
+      <div class="robot-avatar">
+        <svg viewBox="0 0 120 150" aria-hidden="true">
+          <circle cx="60" cy="9" r="5" fill="#C2A05E"/>
+          <line x1="60" y1="12" x2="60" y2="24" stroke="#C2A05E" stroke-width="3" stroke-linecap="round"/>
+          <rect x="38" y="20" width="44" height="42" rx="15" fill="#0A1B33" stroke="#C2A05E" stroke-width="2.5"/>
+          <g class="robot-eyes">
+            <circle cx="53" cy="38" r="5.5" fill="#C2A05E"/>
+            <circle cx="67" cy="38" r="5.5" fill="#C2A05E"/>
+            <circle cx="54.5" cy="36" r="1.9" fill="#FFFFFF"/>
+            <circle cx="68.5" cy="36" r="1.9" fill="#FFFFFF"/>
+          </g>
+          <g class="robot-mouth"><rect x="55" y="51" width="10" height="4" rx="2" fill="#C2A05E"/></g>
+          <rect x="40" y="64" width="40" height="46" rx="13" fill="#0F2547" stroke="#C2A05E" stroke-width="2.5"/>
+          <circle cx="60" cy="83" r="10" fill="none" stroke="#C2A05E" stroke-width="2.5" class="robot-ring"/>
+          <circle cx="60" cy="83" r="4.5" fill="#C2A05E" class="robot-heart"/>
+        </svg>
+      </div>
+      <div class="robot-panel-title">
+        <strong>德航小德</strong>
+        <span>智能客服 · 在线服务</span>
+      </div>
+      <button class="robot-close" id="robotClose" type="button" aria-label="关闭客服">✕</button>
+    </div>
+    <div class="robot-body" id="robotBody"></div>
+    <div class="robot-quick" id="robotQuick">
+      <button type="button">公司介绍</button>
+      <button type="button">资质荣誉</button>
+      <button type="button">工程业绩</button>
+      <button type="button">联系方式</button>
+    </div>
+    <div class="robot-input-row">
+      <input type="text" id="robotInput" placeholder="请输入您的问题…" maxlength="200" autocomplete="off">
+      <button id="robotSend" type="button" aria-label="发送">
+        <svg viewBox="0 0 24 24"><path d="M3 11l18-7-7 18-2.5-7.5L3 11z" fill="currentColor"/></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
 <script src="js/main.js"></script>
+<script src="js/robot.js"></script>
 </body>
 </html>
